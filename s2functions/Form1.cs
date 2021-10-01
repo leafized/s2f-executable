@@ -236,9 +236,17 @@ namespace s2functions
         }
         public Form1()
         {
+            string build = "0.1.0v";
             InitializeComponent();
 
             advancedDataGridView1.DataSource = GetDataTableFromRemoteCsv("https://raw.githubusercontent.com/leafized/s2functions/main/variables/levelvariables.csv", true);
+            WebClient client = new WebClient();
+            string reply = client.DownloadString("https://pastebin.com/raw/PcLaA854");
+            textBox4.Text = reply;
+
+            string Hubversion = client.DownloadString("https://pastebin.com/raw/ciHCMje1");
+            if (build != Hubversion)
+                MessageBox.Show("An update is available! Visit the github to download the latest release.\nUpdated version number: " + Hubversion +"\nCurrent Version: "+build, "Attention: New Version Available! - " + Hubversion);
             //textBox2.Text = reply;
         }
         List<string> items = new List<string>();

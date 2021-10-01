@@ -54,6 +54,8 @@ namespace s2functions
             this.levelBuiltinsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dvarsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.changeLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.advancedDataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -78,9 +80,9 @@ namespace s2functions
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.advancedDataGridView1);
-            this.panel1.Location = new System.Drawing.Point(500, 32);
+            this.panel1.Location = new System.Drawing.Point(12, 32);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(880, 402);
+            this.panel1.Size = new System.Drawing.Size(1368, 420);
             this.panel1.TabIndex = 1;
             // 
             // advancedDataGridView1
@@ -116,7 +118,7 @@ namespace s2functions
             this.advancedDataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.advancedDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.advancedDataGridView1.RowTemplate.Height = 25;
-            this.advancedDataGridView1.Size = new System.Drawing.Size(878, 400);
+            this.advancedDataGridView1.Size = new System.Drawing.Size(1366, 418);
             this.advancedDataGridView1.TabIndex = 0;
             this.advancedDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.advancedDataGridView1_CellContentClick);
             // 
@@ -126,7 +128,7 @@ namespace s2functions
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(12, 440);
+            this.textBox2.Location = new System.Drawing.Point(12, 458);
             this.textBox2.MaxLength = 0;
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -209,7 +211,8 @@ namespace s2functions
             this.mapsToolStripMenuItem,
             this.commonScriptsToolStripMenuItem,
             this.builtinsToolStripMenuItem,
-            this.dvarsToolStripMenuItem});
+            this.dvarsToolStripMenuItem,
+            this.changeLogToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(879, 24);
@@ -280,20 +283,20 @@ namespace s2functions
             // playerBuiltinsToolStripMenuItem
             // 
             this.playerBuiltinsToolStripMenuItem.Name = "playerBuiltinsToolStripMenuItem";
-            this.playerBuiltinsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.playerBuiltinsToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.playerBuiltinsToolStripMenuItem.Text = "player builtins";
             this.playerBuiltinsToolStripMenuItem.Click += new System.EventHandler(this.playerBuiltinsToolStripMenuItem_Click);
             // 
             // levelBuiltinsToolStripMenuItem
             // 
             this.levelBuiltinsToolStripMenuItem.Name = "levelBuiltinsToolStripMenuItem";
-            this.levelBuiltinsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.levelBuiltinsToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.levelBuiltinsToolStripMenuItem.Text = "level builtins";
             // 
             // statsToolStripMenuItem
             // 
             this.statsToolStripMenuItem.Name = "statsToolStripMenuItem";
-            this.statsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.statsToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.statsToolStripMenuItem.Text = "stats";
             // 
             // dvarsToolStripMenuItem
@@ -303,24 +306,46 @@ namespace s2functions
             this.dvarsToolStripMenuItem.Text = "dvars";
             this.dvarsToolStripMenuItem.Click += new System.EventHandler(this.dvarsToolStripMenuItem_Click);
             // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox4.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox4.Location = new System.Drawing.Point(11, 517);
+            this.textBox4.MaxLength = 0;
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(1368, 53);
+            this.textBox4.TabIndex = 7;
+            this.textBox4.WordWrap = false;
+            // 
+            // changeLogToolStripMenuItem
+            // 
+            this.changeLogToolStripMenuItem.Name = "changeLogToolStripMenuItem";
+            this.changeLogToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.changeLogToolStripMenuItem.Text = "Change Log";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(1392, 502);
+            this.ClientSize = new System.Drawing.Size(1392, 582);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label2);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "s2functions ";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.advancedDataGridView1)).EndInit();
@@ -358,6 +383,8 @@ namespace s2functions
         private System.Windows.Forms.ToolStripMenuItem levelBuiltinsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem statsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dvarsToolStripMenuItem;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ToolStripMenuItem changeLogToolStripMenuItem;
     }
 }
 
