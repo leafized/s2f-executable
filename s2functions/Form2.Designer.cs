@@ -51,7 +51,7 @@ namespace s2functions
             this.ClientSize = new System.Drawing.Size(1000, 569);
             this.Controls.Add(this.textBox1);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Changelog";
             this.ResumeLayout(false);
             this.PerformLayout();
 

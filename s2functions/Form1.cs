@@ -412,5 +412,16 @@ namespace s2functions
         {
             advancedDataGridView1.DataSource = GetDataTableFromRemoteCsv("https://raw.githubusercontent.com/leafized/s2functions/main/dvars.csv", true);
         }
+
+        private void changeLogToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var window = new Form2();
+            window.Show();
+        }
+
+        private void botsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            advancedDataGridView1.DataSource = GetDataTableFromRemoteCsv("https://raw.githubusercontent.com/leafized/s2functions/main/functions/maps/mp/bots/_bots.csv", true);
+        }
     }
 }

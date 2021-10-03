@@ -29,8 +29,8 @@ namespace s2functions
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.advancedDataGridView1 = new Zuby.ADGV.AdvancedDataGridView();
@@ -56,6 +56,7 @@ namespace s2functions
             this.dvarsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changeLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.botsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.advancedDataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -91,23 +92,23 @@ namespace s2functions
             this.advancedDataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.advancedDataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.advancedDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.advancedDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.advancedDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.advancedDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.advancedDataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.advancedDataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             this.advancedDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.advancedDataGridView1.FilterAndSortEnabled = true;
             this.advancedDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -235,7 +236,7 @@ namespace s2functions
             this.zombiesToolStripMenuItem,
             this.botsToolStripMenuItem});
             this.mpToolStripMenuItem.Name = "mpToolStripMenuItem";
-            this.mpToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.mpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mpToolStripMenuItem.Text = "mp";
             // 
             // gametypesToolStripMenuItem
@@ -243,26 +244,28 @@ namespace s2functions
             this.gametypesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hudmessagecsvToolStripMenuItem});
             this.gametypesToolStripMenuItem.Name = "gametypesToolStripMenuItem";
-            this.gametypesToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.gametypesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gametypesToolStripMenuItem.Text = "gametypes";
             // 
             // hudmessagecsvToolStripMenuItem
             // 
             this.hudmessagecsvToolStripMenuItem.Name = "hudmessagecsvToolStripMenuItem";
-            this.hudmessagecsvToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.hudmessagecsvToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.hudmessagecsvToolStripMenuItem.Text = "_hud_message.csv";
             this.hudmessagecsvToolStripMenuItem.Click += new System.EventHandler(this.hudmessagecsvToolStripMenuItem_Click);
             // 
             // zombiesToolStripMenuItem
             // 
             this.zombiesToolStripMenuItem.Name = "zombiesToolStripMenuItem";
-            this.zombiesToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.zombiesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.zombiesToolStripMenuItem.Text = "zombies";
             // 
             // botsToolStripMenuItem
             // 
+            this.botsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.botsToolStripMenuItem1});
             this.botsToolStripMenuItem.Name = "botsToolStripMenuItem";
-            this.botsToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.botsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.botsToolStripMenuItem.Text = "bots";
             // 
             // commonScriptsToolStripMenuItem
@@ -312,6 +315,7 @@ namespace s2functions
             this.changeLogToolStripMenuItem.Name = "changeLogToolStripMenuItem";
             this.changeLogToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
             this.changeLogToolStripMenuItem.Text = "Change Log";
+            this.changeLogToolStripMenuItem.Click += new System.EventHandler(this.changeLogToolStripMenuItem_Click);
             // 
             // textBox4
             // 
@@ -327,6 +331,13 @@ namespace s2functions
             this.textBox4.Size = new System.Drawing.Size(1368, 53);
             this.textBox4.TabIndex = 7;
             this.textBox4.WordWrap = false;
+            // 
+            // botsToolStripMenuItem1
+            // 
+            this.botsToolStripMenuItem1.Name = "botsToolStripMenuItem1";
+            this.botsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.botsToolStripMenuItem1.Text = "_bots.csv";
+            this.botsToolStripMenuItem1.Click += new System.EventHandler(this.botsToolStripMenuItem1_Click);
             // 
             // Form1
             // 
@@ -386,6 +397,7 @@ namespace s2functions
         private System.Windows.Forms.ToolStripMenuItem dvarsToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ToolStripMenuItem changeLogToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem botsToolStripMenuItem1;
     }
 }
 
